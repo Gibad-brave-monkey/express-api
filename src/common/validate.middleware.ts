@@ -3,7 +3,6 @@ import { ClassConstructor, plainToClass } from "class-transformer";
 import { validate } from "class-validator";
 
 import { IMiddleWare } from "./middleware.interface";
-import { error } from "console";
 
 export class ValidateMiddleware implements IMiddleWare {
 	constructor(private classToValidate: ClassConstructor<object>) {}
